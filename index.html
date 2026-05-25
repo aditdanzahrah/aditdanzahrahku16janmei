@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Zahrahku Tersayang</title>
+    
+    <!-- LINK FONT PILIHAN: Ganti URL di bawah ini jika ingin mengubah font -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        /* Pengaturan Dasar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ffe4e1; /* Warna pink romantis (Misty Rose) */
+            font-family: 'Playfair Display', serif; /* Font utama */
+            color: #4a0e17;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        h1, h2 {
+            font-family: 'Sacramento', cursive; /* Font khusus judul agar lebih puitis */
+            color: #b01e33;
+            text-align: center;
+        }
+
+        /* Latar Belakang Teks Zahrahku (Watermark Berulang) */
+        .bg-text-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.08; /* Transparan agar tidak mengganggu foto */
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 2.5;
+            padding: 10px;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        /* Konten Utama Website */
+        .wrapper {
+            position: relative;
+            z-index: 3;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #8c2d38;
+        }
+
+        /* Galeri Foto */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 20px;
+        }
+
+        /* Bingkai Foto Elegan */
+        .photo-card {
+            background: #fff;
+            padding: 15px 15px 30px 15px;
+            box-shadow: 0 10px 25px rgba(176, 30, 51, 0.15);
+            border: 2px solid #d4af37; /* Bingkai warna emas elegan */
+            border-radius: 4px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px) rotate(1deg);
+        }
+
+        .photo-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border: 1px solid #f3e5e8;
+            margin-bottom: 15px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-caption {
+            text-align: center;
+            font-family: 'Sacramento', cursive;
+            font-size: 1.8rem;
+            color: #b01e33;
+        }
+
+        /* Dekorasi Bunga Mawar Mengambang */
+        .rose-decoration {
+            position: fixed;
+            font-size: 2rem;
+            z-index: 2;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Posisi Mawar di Sudut Layar */
+        .rose-1 { top: 5%; left: 3%; animation-delay: 0s; }
+        .rose-2 { top: 75%; left: 2%; animation-delay: 1.5s; }
+        .rose-3 { top: 15%; right: 4%; animation-delay: 3s; }
+        .rose-4 { top: 60%; right: 3%; animation-delay: 4.5s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(10deg); }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #8c2d38;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Latar Belakang Teks "Zahrahku" Sebanyak-banyaknya -->
+    <div class="bg-text-container" id="bgText"></div>
+
+    <!-- Dekorasi Bunga Mawar Indah -->
+    <div class="rose-decoration rose-1">🌹</div>
+    <div class="rose-decoration rose-2">🌹</div>
+    <div class="rose-decoration rose-3">🌹</div>
+    <div class="rose-decoration rose-4">🌹</div>
+
+    <!-- Konten Utama -->
+    <div class="wrapper">
+        <header>
+            <h1>Zahrahku Tersayang</h1>
+            <p>Setiap kelopak mawar mengingatkanku pada keindahanmu...</p>
+        </header>
+
+        <!-- Tempat 13 Foto -->
+        <main class="gallery">
+            
+            <!-- Foto 1 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto1.jpg" alt="Zahrahku 1">
+                </div>
+                <div class="photo-caption">Senyuman Pertamamu 🌹</div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto2.jpg" alt="Zahrahku 2">
+                </div>
+                <div class="photo-caption">Binar Matamu ✨</div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto3.jpg" alt="Zahrahku 3">
+                </div>
+                <div class="photo-caption">Hari yang Indah 🌸</div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto4.jpg" alt="Zahrahku 4">
+                </div>
+                <div class="photo-caption">Tawa Bahagiamu ❤️</div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto5.jpg" alt="Zahrahku 5">
+                </div>
+                <div class="photo-caption">Saat Bersamamu 🥰</div>
+            </div>
+
+            <!-- Foto 6 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto6.jpg" alt="Zahrahku 6">
+                </div>
+                <div class="photo-caption">Selalu Cantik 🌹</div>
+            </div>
+
+            <!-- Foto 7 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto7.jpg" alt="Zahrahku 7">
+                </div>
+                <div class="photo-caption">Kenangan Manis ☕</div>
+            </div>
+
+            <!-- Foto 8 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto8.jpg" alt="Zahrahku 8">
+                </div>
+                <div class="photo-caption">Langkah Bersama 🐾</div>
+            </div>
+
+            <!-- Foto 9 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto9.jpg" alt="Zahrahku 9">
+                </div>
+                <div class="photo-caption">Dunia Indah Ditandai Dirimu 🌍</div>
+            </div>
+
+            <!-- Foto 10 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto10.jpg" alt="Zahrahku 10">
+                </div>
+                <div class="photo-caption">Pelipur Lara 🧸</div>
+            </div>
+
+            <!-- Foto 11 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto11.jpg" alt="Zahrahku 11">
+                </div>
+                <div class="photo-caption">Masa Depan Cerah ☀️</div>
+            </div>
+
+            <!-- Foto 12 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto12.jpg" alt="Zahrahku 12">
+                </div>
+                <div class="photo-caption">Bunga Terindahku 🌷</div>
+            </div>
+
+            <!-- Foto 13 -->
+            <div class="photo-card">
+                <div class="photo-container">
+                    <img src="foto13.jpg" alt="Zahrahku 13">
+                </div>
+                <div class="photo-caption">Selamanya Milikku 💍</div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Dibuat dengan seluruh rasa cinta untuk Zahrahku.</p>
+        </footer>
+    </div>
+
+    <!-- Script otomatis untuk mengisi teks "Zahrahku" sebanyak-banyaknya di latar belakang -->
+    <script>
+        const bgContainer = document.getElementById('bgText');
+        const teks = "Zahrahku ";
+        // Mengulang teks sebanyak 300 kali untuk memenuhi layar web
+        bgContainer.innerText = teks.repeat(300);
+    </script>
+</body>
+</html>
